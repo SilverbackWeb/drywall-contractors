@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const config = await loadConfig();
     if (!config) return;
 
+    // Apply theme colors from config
+    applyThemeColors(config.theme);
+
     // Populate all sections
     populateSEO(config.seo);
     populateNavbar(config.business, config.logo, config.logoOptions);
@@ -38,6 +41,17 @@ async function loadConfig() {
         console.error('Error loading config:', error);
         return null;
     }
+}
+
+/* ==========================================
+   THEME APPLICATION
+   ========================================== */
+
+function applyThemeColors(theme) {
+    const root = document.documentElement;
+    root.style.setProperty('--primary', theme.primaryColor);
+    root.style.setProperty('--secondary', theme.secondaryColor);
+    root.style.setProperty('--accent', theme.accentColor);
 }
 
 /* ==========================================
@@ -96,8 +110,14 @@ function populateServices(services) {
     services.forEach(service => {
         const card = document.createElement('div');
         card.className = 'service-card';
+
+        // Check if icon is a path (SVG image) or emoji
+        const iconContent = service.iconPath
+            ? `<img src="${service.iconPath}" alt="${service.title} icon" class="service-icon-img">`
+            : `<div class="service-icon">${icons[service.icon] || '✓'}</div>`;
+
         card.innerHTML = `
-            <div class="service-icon">${icons[service.icon] || '✓'}</div>
+            ${iconContent}
             <h3>${service.title}</h3>
             <p>${service.description}</p>
         `;

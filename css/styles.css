@@ -331,6 +331,20 @@ section {
     transform: rotate(360deg) scale(1.15);
 }
 
+.service-icon-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover .service-icon-img {
+    transform: rotate(360deg) scale(1.15);
+}
+
 .service-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;

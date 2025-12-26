@@ -45,17 +45,17 @@
     {
       "title": "Drywall Installation",
       "description": "Professional installation of drywall for residential and commercial projects. We handle framing, insulation, and precise hang with seamless results.",
-      "icon": "hammer"
+      "iconPath": "assets/icon-drywall-install.svg"
     },
     {
       "title": "Repair & Finishing",
       "description": "Expert repair of damaged drywall, patching, mudding, and taping. We blend repairs seamlessly for a flawless finish.",
-      "icon": "wrench"
+      "iconPath": "assets/icon-repair.svg"
     },
     {
       "title": "Texturing & Popcorn",
       "description": "Custom texture application and popcorn removal. We create the exact aesthetic you want for any room or commercial space.",
-      "icon": "drill"
+      "iconPath": "assets/icon-texture.svg"
     }
   ],
 
