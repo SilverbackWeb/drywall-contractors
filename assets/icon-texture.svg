@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Texture application icon -->
-  <circle cx="25" cy="30" r="4" fill="#ba1c33"/>
-  <circle cx="40" cy="25" r="4" fill="#ba1c33"/>
-  <circle cx="55" cy="32" r="4" fill="#ba1c33"/>
-  <circle cx="70" cy="28" r="4" fill="#ba1c33"/>
-  <circle cx="30" cy="50" r="4" fill="#ba1c33"/>
-  <circle cx="50" cy="45" r="4" fill="#ba1c33"/>
-  <circle cx="65" cy="52" r="4" fill="#ba1c33"/>
-  <circle cx="20" cy="70" r="4" fill="#ba1c33"/>
-  <circle cx="45" cy="68" r="4" fill="#ba1c33"/>
-  <circle cx="75" cy="72" r="4" fill="#ba1c33"/>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .texture-dot { fill: #ba1c33; }
+    </style>
+  </defs>
+  <!-- Spray/texture pattern - popcorn texture -->
+  <circle class="texture-dot" cx="60" cy="50" r="8"/>
+  <circle class="texture-dot" cx="90" cy="45" r="6"/>
+  <circle class="texture-dot" cx="120" cy="55" r="7"/>
+  <circle class="texture-dot" cx="150" cy="50" r="6"/>
+  <circle class="texture-dot" cx="180" cy="58" r="7"/>
+  <circle class="texture-dot" cx="210" cy="48" r="8"/>
+  <circle class="texture-dot" cx="240" cy="55" r="6"/>
+
+  <circle class="texture-dot" cx="75" cy="95" r="6"/>
+  <circle class="texture-dot" cx="105" cy="100" r="8"/>
+  <circle class="texture-dot" cx="135" cy="92" r="7"/>
+  <circle class="texture-dot" cx="165" cy="98" r="6"/>
+  <circle class="texture-dot" cx="195" cy="95" r="7"/>
+  <circle class="texture-dot" cx="225" cy="100" r="6"/>
+
+  <circle class="texture-dot" cx="50" cy="140" r="7"/>
+  <circle class="texture-dot" cx="85" cy="145" r="6"/>
+  <circle class="texture-dot" cx="120" cy="140" r="8"/>
+  <circle class="texture-dot" cx="150" cy="148" r="7"/>
+  <circle class="texture-dot" cx="180" cy="142" r="6"/>
+  <circle class="texture-dot" cx="215" cy="145" r="7"/>
+  <circle class="texture-dot" cx="245" cy="138" r="6"/>
+
+  <circle class="texture-dot" cx="70" cy="190" r="6"/>
+  <circle class="texture-dot" cx="110" cy="195" r="7"/>
+  <circle class="texture-dot" cx="145" cy="188" r="6"/>
+  <circle class="texture-dot" cx="180" cy="192" r="8"/>
+  <circle class="texture-dot" cx="220" cy="190" r="7"/>
+
+  <!-- Spray gun outline -->
+  <path d="M 80 240 L 140 250 L 145 270 L 75 265 Z" fill="none" stroke="#ba1c33" stroke-width="3" stroke-linejoin="round"/>
 </svg>
