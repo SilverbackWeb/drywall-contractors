@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     populateSEO(config.seo);
     populateNavbar(config.business, config.logo, config.logoOptions);
     populateHero(config.hero, config.business);
-    populateServices(config.services);
+    await populateServices(config.services);
     populateGallery(config.gallery);
     populateReviews(config.reviews);
     populateProcess(config.process, config.contact);
@@ -92,7 +92,7 @@ function populateHero(hero, business) {
     }
 }
 
-function populateServices(services) {
+async function populateServices(services) {
     const grid = document.getElementById('services-grid');
     grid.innerHTML = '';
 
@@ -107,14 +107,32 @@ function populateServices(services) {
         bolt: '⚡'
     };
 
-    services.forEach(service => {
+    for (const service of services) {
         const card = document.createElement('div');
         card.className = 'service-card';
 
-        // Check if icon is a path (SVG image) or emoji
-        const iconContent = service.iconPath
-            ? `<img src="${service.iconPath}" alt="${service.title} icon" class="service-icon-img">`
-            : `<div class="service-icon">${icons[service.icon] || '✓'}</div>`;
+        let iconContent = '';
+        if (service.iconPath) {
+            try {
+                const response = await fetch(service.iconPath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const svgText = await response.text();
+                console.log(`Fetched SVG for ${service.title}:`, svgText.substring(0, 100));
+
+                // Replace all fill attributes with inline style using primary color
+                const svgWithColor = svgText.replace(/<svg/g, '<svg style="fill: var(--primary)"').replace(/fill="[^"]*"/g, '');
+
+                iconContent = `<div class="service-icon-svg">${svgWithColor}</div>`;
+                console.log(`Processed icon for ${service.title}, color applied`);
+            } catch (err) {
+                console.error(`Error fetching SVG for ${service.title}:`, err);
+                iconContent = `<div class="service-icon">${icons[service.icon] || '✓'}</div>`;
+            }
+        } else {
+            iconContent = `<div class="service-icon">${icons[service.icon] || '✓'}</div>`;
+        }
 
         card.innerHTML = `
             ${iconContent}
@@ -122,7 +140,7 @@ function populateServices(services) {
             <p>${service.description}</p>
         `;
         grid.appendChild(card);
-    });
+    }
 }
 
 function populateGallery(gallery) {
