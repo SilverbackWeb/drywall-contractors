@@ -1,0 +1,163 @@
+{
+  "business": {
+    "name": "Drywall Contractors",
+    "tagline": "Expert Drywall Solutions",
+    "phone": "314-555-1234",
+    "email": "",
+    "address": "123 Main Street",
+    "city": "St. Louis",
+    "state": "MO",
+    "zip": "63101"
+  },
+
+  "theme": {
+    "primaryColor": "#ba1c33",
+    "secondaryColor": "#343330",
+    "accentColor": "#F7F7FF"
+  },
+
+  "logo": {
+    "type": "drywall",
+    "alt": "Drywall Contractors Logo"
+  },
+
+  "logoOptions": {
+    "contractor": "assets/Contractor-logo.svg",
+    "drywall": "assets/drywall-logo.svg",
+    "handyman": "assets/handyman-logo.svg",
+    "house": "assets/house-logo.svg",
+    "house-lux": "assets/house-lux-logo.svg",
+    "landscape": "assets/landscape-logo.svg",
+    "painting": "assets/Painting-Logo.svg",
+    "pro": "assets/pro-logo.svg"
+  },
+
+  "hero": {
+    "label": "Drywall Specialists",
+    "headline": "Professional Drywall Services",
+    "subheadline": "From installation to finishing, we deliver flawless drywall work. Expert craftsmanship, meticulous attention to detail, and competitive pricing.",
+    "ctaText": "Get Your Free Estimate",
+    "backgroundImage": "assets/images/hero-desktop.webp",
+    "backgroundImageMobile": "assets/images/hero-mobile.webp"
+  },
+
+  "services": [
+    {
+      "title": "Drywall Installation",
+      "description": "Professional installation of drywall for residential and commercial projects. We handle framing, insulation, and precise hang with seamless results.",
+      "icon": "hammer"
+    },
+    {
+      "title": "Repair & Finishing",
+      "description": "Expert repair of damaged drywall, patching, mudding, and taping. We blend repairs seamlessly for a flawless finish.",
+      "icon": "wrench"
+    },
+    {
+      "title": "Texturing & Popcorn",
+      "description": "Custom texture application and popcorn removal. We create the exact aesthetic you want for any room or commercial space.",
+      "icon": "drill"
+    }
+  ],
+
+  "gallery": {
+    "headline": "Recent Projects",
+    "images": [
+      { "src": "assets/images/project-1-desktop.webp", "srcMobile": "assets/images/project-1-mobile.webp", "alt": "Residential Drywall Installation" },
+      { "src": "assets/images/project-2-desktop.webp", "srcMobile": "assets/images/project-2-mobile.webp", "alt": "Commercial Wall Finishing" },
+      { "src": "assets/images/project-3-desktop.webp", "srcMobile": "assets/images/project-3-mobile.webp", "alt": "Ceiling Installation" },
+      { "src": "assets/images/project-4-desktop.webp", "srcMobile": "assets/images/project-4-mobile.webp", "alt": "Texture Finishing Work" },
+      { "src": "assets/images/project-5-desktop.webp", "srcMobile": "assets/images/project-5-mobile.webp", "alt": "Restoration Project" },
+      { "src": "assets/images/project-6-desktop.webp", "srcMobile": "assets/images/project-6-mobile.webp", "alt": "Finished Interior" }
+    ]
+  },
+
+  "reviews": [
+    {
+      "quote": "Perfect drywall installation. The team was professional, punctual, and left everything spotless. Best investment for our renovation!",
+      "name": "Michael J.",
+      "rating": 5
+    },
+    {
+      "quote": "Incredible attention to detail. Seams are invisible and the finish is flawless. Can't recommend them enough!",
+      "name": "Jennifer L.",
+      "rating": 5
+    },
+    {
+      "quote": "Fast, efficient, and quality work. They transformed our basement with perfect drywall and texturing. Very impressed!",
+      "name": "David R.",
+      "rating": 5
+    },
+    {
+      "quote": "Professional crew with exceptional craftsmanship. Fair pricing and great communication. Will definitely use again!",
+      "name": "Amanda T.",
+      "rating": 5
+    },
+    {
+      "quote": "Outstanding work on our commercial project. They met tight deadlines without compromising quality. Highly recommended!",
+      "name": "Thomas B.",
+      "rating": 5
+    }
+  ],
+
+  "process": [
+    {
+      "title": "Site evaluation & planning",
+      "description": "We thoroughly assess your space and develop a detailed plan tailored to your needs and budget."
+    },
+    {
+      "title": "Proper preparation",
+      "description": "Our team prepares everything to exact specifications, ensuring a solid foundation for success."
+    },
+    {
+      "title": "Expert execution",
+      "description": "We execute the work using professional techniques and high-quality materials for optimal results."
+    },
+    {
+      "title": "Finishing & cleanup",
+      "description": "Professional finishing touches and complete site cleanup for a perfect final product."
+    },
+    {
+      "title": "Quality assurance",
+      "description": "Final inspection ensures everything meets our high standards and your expectations."
+    }
+  ],
+
+  "serviceArea": {
+    "mapImage": "assets/service-area-map.svg",
+    "headline": "Serving St. Louis and Surrounding Communities",
+    "highlightText": "St. Louis and Surrounding Communities",
+    "description": "We're your trusted drywall specialists throughout the St. Louis area. From residential renovations to large commercial projects, we bring expertise and professionalism to every job. Our team knows the St. Louis market and delivers prompt, reliable service.",
+    "benefits": [
+      {
+        "title": "Local Knowledge",
+        "description": "Deep understanding of St. Louis building codes and project requirements."
+      },
+      {
+        "title": "Quick Response",
+        "description": "Fast estimates and flexible scheduling throughout the region."
+      },
+      {
+        "title": "Proven Experience",
+        "description": "Years of successful drywall projects in St. Louis area homes and businesses."
+      }
+    ]
+  },
+
+  "contact": {
+    "headline": "Get Your Free Quote",
+    "subheadline": "Tell us about your project. We'll review your details and get back to you quickly with a no-obligation estimate.",
+    "processFooterText": "This process ensures quality, longevity, and a perfect final result — not rushed work that leads to problems later.",
+    "processCtaText": "Schedule Your Project"
+  },
+
+  "footer": {
+    "copyright": "Drywall Contractors",
+    "year": "2025"
+  },
+
+  "seo": {
+    "title": "Drywall Contractors St. Louis | Professional Installation & Finishing",
+    "description": "Expert drywall installation, repair, and finishing in St. Louis. Professional craftsmanship, fair pricing, and free estimates.",
+    "keywords": "drywall contractors, drywall installation, drywall repair, St. Louis, finishing, texturing"
+  }
+}
